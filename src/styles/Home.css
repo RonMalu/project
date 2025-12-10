@@ -1,0 +1,85 @@
+.home-container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 5rem;
+  font-weight: normal;
+  color: var(--gold);
+  text-shadow: 0 0 30px rgba(201, 169, 97, 0.8);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.app-subtitle {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.app-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 2rem auto;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.home-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(201, 169, 97, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(201, 169, 97, 0.9);
+  }
+}
+
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 3rem;
+  }
+
+  .app-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .app-description {
+    font-size: 1rem;
+  }
+
+  .home-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home-actions .btn {
+    width: 100%;
+  }
+}
