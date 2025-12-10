@@ -8,6 +8,8 @@ const Signup = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [password_confirmation, setPasswordConfirmation] = useState('');
+
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const { signup } = useAuth();
@@ -19,7 +21,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      await signup(name, email, password);
+      await signup(name, email, password, password_confirmation);
       navigate('/dashboard');
     } catch (err) {
       setError(
@@ -76,6 +78,19 @@ const Signup = () => {
               placeholder="Create a password"
             />
           </div>
+
+          <div className="form-group">
+            <label htmlFor="password_confirmation">Password Confirmation</label>
+            <input
+              type="password"
+              id="password_confirmation"
+              value={password_confirmation}
+              onChange={(e) => setPasswordConfirmation(e.target.value)}
+              required
+              placeholder=" password should be the same"
+            />
+          </div>
+
 
           <button type="submit" className="btn btn-primary" disabled={loading}>
             {loading ? 'Creating account...' : 'Sign Up'}

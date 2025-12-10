@@ -40,8 +40,8 @@ export const AuthProvider = ({ children }) => {
     return response.data;
   };
 
-  const signup = async (name, email, password) => {
-    const response = await authAPI.signup({ name, email, password });
+  const signup = async (name, email, password, password_confirmation) => {
+    const response = await authAPI.signup({ name, email, password, password_confirmation });
     localStorage.setItem('jwt', response.data.jwt);
     setUser(response.data.user);
     return response.data;
