@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import StarryBackground from '../components/StarryBackground';
+import { HomeHighlights } from '../components/HomeHighlights';
+
 import Compass from '../components/Compass';
 import '../styles/Home.css';
 
@@ -10,6 +12,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <StarryBackground />
+      <HomeHighlights />
 
       <div className="home-content">
         <h1 className="app-title">BlueStar</h1>
@@ -18,8 +21,7 @@ const Home = () => {
         <Compass size={660} />
 
         <p className="app-description">
-          Navigate the seas using ancient wisdom. Track star patterns, wave movements,
-          and bird migrations to find your way across the vast Pacific Ocean.
+          For anyone drawn to the stars, the waves, and the wisdom behind them.
         </p>
 
         <div className="home-actions">
