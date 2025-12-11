@@ -154,3 +154,73 @@ input::placeholder,
 textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
+
+.home-highlights {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+/* Quote section */
+.quote-card {
+  background: #0b1a33;
+  color: #f5f7ff;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border: 1px solid #1f3b66;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  color: #7ec8ff;
+}
+
+.quote-text {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote-source {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Feature grid */
+.feature-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e0e4f0;
+}
+
+.feature-icon {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.feature-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  color: #333;
+}

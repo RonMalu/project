@@ -1,0 +1,17 @@
+[33mcommit 0a664f064096b07c5db0e02d019591d33c88b254[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: RonMalu <malucheichengr@gmail.com>
+Date:   Thu Dec 11 00:15:11 2025 +1000
+
+    added password confirmation
+
+[33mcommit 074c8c34c62cedbb8879eb4e9f23ed55b96a004e[m
+Author: RonMalu <malucheichengr@gmail.com>
+Date:   Wed Dec 10 20:01:46 2025 +1000
+
+    created frontend react
+
+[33mcommit 74221d189f6bf10c754bdd561b208193d1599a3f[m
+Author: RonMalu <malucheichengr@gmail.com>
+Date:   Wed Dec 10 20:01:13 2025 +1000
+
+    first commit

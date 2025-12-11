@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Observations from './pages/Observations';
 import ObservationForm from './pages/ObservationForm';
 
+
 function App() {
   return (
     <Router>
